@@ -4,7 +4,7 @@ Plugin Name: Simple Category Selector
 Plugin URI: https://github.com/saurini/Wordpress_Category-Selector
 Description: Gives the ability to set a main category on the post add/edit pages in admin. Stores that info in post meta.
 Author: Rob Saurini
-Version: 0.2
+Version: 0.2.1
 Author URI: http://saurini.com
 
 GNU General Public License, Free Software Foundation <http://creativecommons.org/licenses/GPL/2.0/>
