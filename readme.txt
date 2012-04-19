@@ -3,7 +3,7 @@ Contributors: robsaurini
 Donate link: 
 Tags: categories
 Requires at least: 3.2
-Tested up to: 3.1
+Tested up to: 3.3.1
 Stable tag: 0.2
 
 Gives you the ability to promote categories associated with a post.
@@ -21,5 +21,8 @@ to grab the ID of main category ( if there is one ).
 
 1. Upload the plugin files to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Get the category's name on by using <? get_the_category_by_ID( get_post_meta( $post_id, 'rs_simple_category_selected', true ) ); ?> 
 
+== Use ==
+
+ * You can use the shortcode *[rs_print_main]* inside the post to print out the category title.
+ * In the theme, you can use *rs_get_main_category_id( **$post_id** )* to return (not print) the id of the main category.
