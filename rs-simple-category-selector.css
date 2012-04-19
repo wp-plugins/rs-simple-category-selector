@@ -1,0 +1,3 @@
+.category_selector{ width: 15px; height: 15px; display: inline-block; position: relative; top: 2px; cursor: pointer; background: url(on_off.png) 0 0 no-repeat; margin-left: 3px;}
+.category_selector.off{ background-position: 0 0;}
+.category_selector.on{ background-position: -15px 0;}
