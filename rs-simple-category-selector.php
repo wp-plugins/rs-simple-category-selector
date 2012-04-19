@@ -73,7 +73,7 @@ class RS_Simple_Category_Selector {
 		if ( empty( $_GET['postid'] ) )
 			die( 'No post has been selected' );
 
-		$post_id = $_GET['postid'];
+		$post_id = (int) $_GET['postid'];
 
 		if ( ! is_admin() && current_user_can( 'edit_post', $post_id ) )
 			die( 'Not in the admin' );
