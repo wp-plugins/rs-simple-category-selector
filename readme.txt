@@ -3,7 +3,7 @@ Contributors: robsaurini
 Donate link: 
 Tags: categories
 Requires at least: 3.2
-Tested up to: 3.1
+Tested up to: 3.3.1
 Stable tag: 0.2
 
 Gives you the ability to promote categories associated with a post.
