@@ -32,7 +32,7 @@ if ( ! defined( 'RSSCS_PLUGIN_NAME' ) )
 	define( 'RSSCS_PLUGIN_NAME', trim( dirname( RSSCS_PLUGIN_BASENAME ), '/' ) );
 	
 if ( ! defined( 'RSSCS_PLUGIN_URL' ) )
-	define( 'RSSCS_PLUGIN_URL', WP_PLUGIN_URL . '/' . RSSCS_PLUGIN_NAME );
+	define( 'RSSCS_PLUGIN_URL', plugins_url()  . '/' . RSSCS_PLUGIN_NAME );
 
 class RS_Simple_Category_Selector {
 
@@ -73,7 +73,7 @@ class RS_Simple_Category_Selector {
 		if ( empty( $_GET['postid'] ) )
 			die( 'No post has been selected' );
 
-		$post_id = (int) $_GET['postid'];
+		$post_id = $_GET['postid'];
 
 		if ( ! is_admin() && current_user_can( 'edit_post', $post_id ) )
 			die( 'Not in the admin' );
