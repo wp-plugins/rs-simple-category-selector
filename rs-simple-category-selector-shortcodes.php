@@ -9,8 +9,9 @@ function shortcode_rs_print_main(){
 	
 	if ( $cat_id = get_post_meta( $post->ID, 'rs_category_selected', true) )	
 		return get_the_category_by_ID( $cat_id );
-		
-	return;
+	
+	// Just in case no main category is selected, the first category that was selected	
+	return get_the_category( $post->ID );
 
 }
 	
